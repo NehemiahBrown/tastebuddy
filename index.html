@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chewy&family=Dela+Gothic+One&family=Fredericka+the+Great&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Taste Buddy</title>
+</head>
+
+<body>
+  <main class="main-content">
+    <header class="header-section">
+      <div class="header-text">
+        <div class="header-text1">
+          <h1 class="header-title">TASTE BUDDY</h1>
+          <p class="header-description">Taste Buddy is your ultimate recipe discovery tool,
+            connecting you with delicious meals tailored to your taste.
+            Whether you're after something new or need inspiration,
+            Taste Buddy finds the perfect recipe to satisfy your cravings.</p>
+        </div>
+        <div class="button-container">
+          <button class="find-meal">Find A Meal</button>
+        </div>
+      </div>
+      </div>
+      <div class="main-image-section">
+        <img class="main-image" src="images/main-image.avif" alt="">
+      </div>
+    </header>
+    <section class="search-bar-section">
+      <h1 class="find-a-recipie">Find A Recipie</h1>
+      <p class="find-a-recipie-para">Enter your taste preferences, and we'll find recipes that hit the spot!</p>
+      <div class="input-container">
+        <button class="search-btn" type="submit"><i class="fa fa-search"> </i></button>
+        <input class="search-bar" type="text" id="search-bar" name="search" placeholder="Search for a tasty recipie">
+      </div>
+    </section>
+    <section class="main-recipie-section">
+      <h2 class="recipie-header">Recipies</h2>
+      <div class="recipie-gallery" id="recipie-section"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
