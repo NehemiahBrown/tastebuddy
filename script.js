@@ -32,7 +32,6 @@ Promise.all([
     console.log(allrecipies);
     displayRecipies(pickedRecipies);
   })
-
   .catch((err) => {
     console.error(`There was an error: ${err}`);
   });
@@ -42,12 +41,14 @@ const displayRecipies = (recipies) => {
 
   recipies.forEach(({ strMealThumb, strMeal, strSource }, index) => {
     recipieSection.innerHTML += `
-      <a class="recipie-name" href="${strSource}" target="_blank">
-        <div id="${index}" class="recipies">
-          <img class="recipie-image" src="${strMealThumb}" alt="${strMeal}">
-          <h1 class="recipie-name">${strMeal}</h1>
-        </div>
-      </a>
+      <div id="${index}" class="recipies">
+        <a class="recipie-link" href="${strSource}" target="_blank">
+          <div class="recipie-image-container">
+            <img  class="recipie-image" src="${strMealThumb}" alt="${strMeal}">
+            <h1 class="recipie-text">${strMeal}</h1>
+          </div>
+        </a>
+      </div>
       `;
   });
 };
