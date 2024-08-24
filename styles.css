@@ -164,12 +164,23 @@ main {
 /* recipie-section */
 .main-recipie-section{
   padding-top: 30px;
+  text-align: center;
 }
 .recipie-header{
-  text-align: center;
+  display: inline-block;
   font-family: var(--primary-font);
   font-weight: 700;
 }
+
+.main-recipie-hr{
+width: 50%;
+height: 2px;
+border-radius: 20px;
+background-color: black;;
+max-width: 400px;
+margin: 20px auto;
+}
+
 
 #recipie-section{
   padding: 30px 8%;
@@ -208,25 +219,29 @@ main {
 
 .recipie-text{
   width: 80%;
+  max-width: 200px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 5px 2px;
-  background-color: rgba(255, 160, 51, 0.6);
+  transform: translateY(-50%);
+  padding: 10px 5px;
+  background-color: rgba(255, 160, 51, 0.8);
+  border-radius: 5px;
   margin-top: -50px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 300;
   text-align: center;
   color: var(--text-color)
 }
 
+.recipie-text:hover{
+  background-color: rgba(255, 160, 51, 0.55);
+}
 /* recipie media queries */
 
-@media screen and (max-width: 768px) {
-.recipie-text{
-  transform: translateY(-50%)
-}
+@media screen and (max-width: 968px) {
 #recipie-section{
   padding: 30px 3%;
 }
